@@ -60,7 +60,8 @@ def redis(app, config, args, kwargs):
             redis_url,
             db=kwargs.pop('db', None),
         )
-
+    print('REDIS ARGS ', args)
+    print('REDIS KWRGS ', kwargs)
     return RedisCache(*args, **kwargs)
 
 
